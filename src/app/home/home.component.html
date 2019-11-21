@@ -1,0 +1,12 @@
+<ActionBar title="Talk NativeScript"></ActionBar>
+
+<ScrollView>
+    <StackLayout padding="16">
+        <StackLayout *ngFor="let language of languages" (tap)="navigate(language)">
+            <Image [src]="language.image"></Image>
+            <Label [text]="language.name"></Label>
+            <Label [text]="language.creator"></Label>
+            <Label [text]="language.year"></Label>
+        </StackLayout>
+    </StackLayout>
+</ScrollView>

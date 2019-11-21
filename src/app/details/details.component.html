@@ -1,0 +1,12 @@
+<ActionBar [title]="language.name">
+    <NavigationButton android.systemIcon="ic_menu_back" (tap)="goBack()"></NavigationButton>
+</ActionBar>
+
+<StackLayout padding="16">
+    <Image [src]="language.image"></Image>
+    <Label [text]="language.creator" fontSize="20"></Label>
+    <Label [text]="language.year" fontSize="16"></Label>
+
+    <Button text="Voltar" class="btn" (tap)="goBack()"></Button>
+</StackLayout>
+
